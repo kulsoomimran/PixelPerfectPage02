@@ -25,28 +25,24 @@ const Footer = () => {
                                 We make a better workspace around the world
                             </p>
                         </div>
-
                         <div className='w-[295px] h-[127px] flex flex-col gap-[15px]'>
                             <p className='text-lg font-bold leading-[21.78px] tracking-[-2%] text-left text-white'>Product</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Overview</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Pricing</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Customer stories</p>
                         </div>
-
                         <div className='w-[295px] h-[130px] flex flex-col gap-[16px]'>
                             <p className='text-lg font-bold leading-[21.78px] tracking-[-2%] text-left text-white'>Resources</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Blog</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Guides & tutorials</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Help center</p>
                         </div>
-
                         <div className='w-[295px] h-[130px] flex flex-col gap-[16px]'>
                             <p className='text-lg font-bold leading-[21.78px] tracking-[-2%] text-left text-white'>Company</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>About us</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Careers</p>
                             <p className='text-base font-normal leading-[20px]tracking-[-2%] text-left text-white'>Media kit</p>
                         </div>
-
                     </div>
                     <div className='w-[1480px] h-[20px] flex justify-center'>
                         <p className='text-base font-normal leading-[20px] tracking-[-2%]  text-white'>&copy;2021 Whitepace LLC.</p>
