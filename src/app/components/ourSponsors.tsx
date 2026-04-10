@@ -12,22 +12,21 @@ const inter = Inter({
 });
 const OurSponsors = () => {
   return (
-    <>
-      <div className='w-[1920px] h-[574px] py-[140px] px-[220px]'>
-        <div className='w-[1481px] h-[294px] gap-[60px] flex flex-col items-center '>
-          <div className='w-[1482px] h-[87px] '>
-            <h1 className={`${inter} font-bold text-7xl leading-[87.14px] tracking-[-2%] text-center text-[#212529]`}>Our sponsors</h1>
-          </div>
-          <div className='w-[1482px] h-[71px] flex justify-evenly list-none items-center'>
-            <li><Image src={Apple} alt='Apple Logo' /></li>
-            <li><Image src={Microsoft} alt='Microsoft Logo' /></li>
-            <li><Image src={Slack} alt='Slack Logo' /></li>
-            <li><Image src={Google} alt='Google Logo' /></li>
-          </div>
+    <section className='w-full py-16 md:py-20 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white'>
+      <div className='max-w-7xl mx-auto'>
+        <div className='flex flex-col items-center space-y-12 md:space-y-16'>
+          <h1 className={`${inter.className} font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center text-[#212529]`}>
+            Our sponsors
+          </h1>
+          <ul className='w-full flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16 list-none'>
+            <li className='flex-shrink-0'><Image src={Apple} alt='Apple Logo' className='h-8 md:h-12 w-auto' /></li>
+            <li className='flex-shrink-0'><Image src={Microsoft} alt='Microsoft Logo' className='h-8 md:h-12 w-auto' /></li>
+            <li className='flex-shrink-0'><Image src={Slack} alt='Slack Logo' className='h-8 md:h-12 w-auto' /></li>
+            <li className='flex-shrink-0'><Image src={Google} alt='Google Logo' className='h-8 md:h-12 w-auto' /></li>
+          </ul>
         </div>
       </div>
-
-    </>
+    </section>
   )
 }
 

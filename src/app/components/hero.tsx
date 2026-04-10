@@ -12,21 +12,33 @@ const inter = Inter({
 
 const Hero = () => {
   return (
-    <div className='w-[1920px]  h-[829px] py-[140px] px-[220px] flex items-center bg-[#043873]'>
-      <div className={`w-[656px] h-[361px] ${inter.className} flex flex-col gap-[50px] `}>
-        <div className='w-[656px] h-[238px] gap-[24px] '>
-          <h2 className='w-[656px] h-[154px] text-[64px] font-bold leading-[77.45px] tracking-[-2%] text-left text-white' >Get More Done with whitepace</h2>
-          <p className='w-[656px] pt-6 h-[60px] text-lg font-normal leading-[30px] tracking-[-2%] text-left text-white'>Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
-        </div>
-        <div>
-          <button className='w-[240px] h-[63px] p-5 gap-[10px]  rounded-lg bg-[#4F9CF9] hover:bg-[#3c8bf3] '>
-            <p className='flex items-center gap-2 text-lg font-medium leading-[23px] tracking-[-2%] text-left text-white'>Try Whitepace free <FaArrowRight /></p></button>
+    <section className='w-full py-16 md:py-20 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-[#043873]'>
+      <div className='max-w-7xl mx-auto'>
+        <div className={`flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-16 ${inter.className}`}>
+          {/* Left side - Text content */}
+          <div className='flex-1 flex flex-col justify-center w-full lg:w-auto'>
+            <div className='space-y-6'>
+              <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white'>
+                Get More Done with whitepace
+              </h2>
+              <p className='text-base sm:text-lg leading-relaxed text-white max-w-2xl'>
+                Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
+              </p>
+            </div>
+            <div className='mt-8 md:mt-12'>
+              <button className='inline-flex items-center gap-2 py-4 px-8 rounded-lg bg-[#4F9CF9] hover:bg-[#3c8bf3] transition-colors text-white text-lg font-medium'>
+                Try Whitepace free <FaArrowRight />
+              </button>
+            </div>
+          </div>
+
+          {/* Right side - Image block */}
+          <div className='flex-1 w-full lg:w-auto flex items-center justify-center'>
+            <div className='w-full aspect-[3/2] max-w-2xl bg-[#C4DEFD] rounded-lg'></div>
+          </div>
         </div>
       </div>
-      <div className='w-[824px] h-[549px] gap-1 bg-[#C4DEFD]'></div>
-    </div>
-
-
+    </section>
   )
 }
 

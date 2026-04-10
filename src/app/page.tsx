@@ -7,10 +7,9 @@ import OurSponsors from "./components/ourSponsors"
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <Hero />
       <Project />
-      <div className="my-[700px]"></div>
       <Extension />
       <Customise />
       <YourWork />

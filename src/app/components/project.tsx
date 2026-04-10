@@ -11,43 +11,57 @@ const inter = Inter({
 
 const Project = () => {
   return (
-    <>
-      <div className='w-[1920px] h-[900px] 1588  py-[140px] px-[220px] flex flex-col gap-[100px]'>
-        <div className={`w-[1480px] h-[547px] flex items-center ${inter.className} gap-[60px] `}>
-          <div className='w-[672px] h-[411px]  gap-[60px] '>
-            <div className="w-[700px] h-[288px] gap-6">
-              <h1 className='w-[672px] h-[174px] text-[72px] font-bold leading-[87.14px] tracking-[-2%] text-left text-[#212529]' >Project Management</h1>
-              <p className='w-[672px] pt-6 h-[90px] text-lg font-normal leading-[30px] tracking-[-2%] text-left text-[#212529]'>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
+    <section className='w-full py-16 md:py-20 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white'>
+      <div className='max-w-7xl mx-auto space-y-16 md:space-y-24 lg:space-y-32'>
+        {/* Project Management Section */}
+        <div className={`flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-16 ${inter.className}`}>
+          <div className='flex-1 flex flex-col justify-center w-full lg:w-auto'>
+            <div className='space-y-6'>
+              <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#212529]'>
+                Project Management
+              </h1>
+              <p className='text-base sm:text-lg leading-relaxed text-[#212529] max-w-2xl'>
+                Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
+              </p>
             </div>
-            <div>
-              <button className='w-[210px] h-[63px] py-[20px] px-[40px] gap-[10px] mt-[60px] rounded-md bg-[#4F9CF9]  '>
-                <p className='flex items-center gap-2 text-lg font-medium leading-[23px] tracking-[-2%] text-left text-white'>Get Started <FaArrowRight /></p></button>
-            </div>
-          </div>
-
-          <div className='w-[824px] h-[549px] gap-1 bg-[#C4DEFD]'></div>
-        </div>
-
-
-        <div className={`w-[1480px] h-[661px] flex items-center ${inter.className} flex flex-row-reverse gap-[100px]`}>
-          <div className='w-[670px] h-[294px] flex flex-col gap-[60px] '>
-            <div className="w-[670px] h-[171px] flex flex-col gap-6">
-              <h1 className='w-[670px] h-[87px] text-[72px] font-bold leading-[87.14px] tracking-[-2%] text-left text-[#212529]' >Work together</h1>
-              <p className='w-[690px] pt-6 h-[60px] text-lg font-normal leading-[30px] tracking-[-2%] text-left text-[#212529]'>With whitepace, share your notes with your colleagues and collaborate on them.
-                You can also publish a note to the internet and share the URL with others.</p>
-            </div>
-            <div>
-              <button className='w-[196px] h-[63px] py-[20px] px-[40px] flex gap-[10px]  rounded-md bg-[#4F9CF9]  '>
-                <p className='flex items-center gap-2 text-lg font-medium leading-[23px] tracking-[-2%] text-left text-white'>Try it now <FaArrowRight /></p></button>
+            <div className='mt-8 md:mt-12'>
+              <button className='inline-flex items-center gap-2 py-4 px-8 rounded-md bg-[#4F9CF9] hover:bg-[#3d8ae6] transition-colors text-white text-lg font-medium'>
+                Get Started <FaArrowRight />
+              </button>
             </div>
           </div>
-          <div className='w-[710px] h-[661px] gap-1 '>
-            <Image src={image} alt={"picture"} />
+
+          <div className='flex-1 w-full lg:w-auto flex items-center justify-center'>
+            <div className='w-full aspect-[3/2] max-w-2xl bg-[#C4DEFD] rounded-lg'></div>
           </div>
         </div>
 
+        {/* Work Together Section */}
+        <div className={`flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12 lg:gap-16 ${inter.className}`}>
+          <div className='flex-1 flex flex-col justify-center w-full lg:w-auto'>
+            <div className='space-y-6'>
+              <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#212529]'>
+                Work together
+              </h1>
+              <p className='text-base sm:text-lg leading-relaxed text-[#212529] max-w-2xl'>
+                With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
+              </p>
+            </div>
+            <div className='mt-8 md:mt-12'>
+              <button className='inline-flex items-center gap-2 py-4 px-8 rounded-md bg-[#4F9CF9] hover:bg-[#3d8ae6] transition-colors text-white text-lg font-medium'>
+                Try it now <FaArrowRight />
+              </button>
+            </div>
+          </div>
+
+          <div className='flex-1 w-full lg:w-auto flex items-center justify-center'>
+            <div className='w-full max-w-2xl'>
+              <Image src={image} alt="Work Together" className='w-full h-auto rounded-lg' />
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 

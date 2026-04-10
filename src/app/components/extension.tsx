@@ -9,23 +9,33 @@ const inter = Inter({
 
 const Extension = () => {
   return (
-    <>
-      <div className='w-[1920px]  h-[759px] py-[140px] px-[220px] flex items-center gap-[98px] bg-[#043873]'>
-        <div className={`w-[697px] h-[294px] ${inter.className} flex flex-col gap-[60px] `}>
-          <div className='w-[697px] h-[171px] flex flex-col gap-[24px] '>
-            <h2 className='w-[697px] h-[187px] text-[72px] font-bold leading-[87.14px] tracking-[-2%] text-left text-white' >Use as Extension</h2>
-            <p className='w-[697px] pt-6 h-[60px] text-lg font-normal leading-[30px] tracking-[-2%] text-left text-white'>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
-            </p>
+    <section className='w-full py-16 md:py-20 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-[#043873]'>
+      <div className='max-w-7xl mx-auto'>
+        <div className={`flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-16 ${inter.className}`}>
+          {/* Left side - Text content */}
+          <div className='flex-1 flex flex-col justify-center w-full lg:w-auto'>
+            <div className='space-y-6'>
+              <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white'>
+                Use as Extension
+              </h2>
+              <p className='text-base sm:text-lg leading-relaxed text-white max-w-2xl'>
+                Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+              </p>
+            </div>
+            <div className='mt-8 md:mt-12'>
+              <button className='inline-flex items-center gap-2 py-4 px-8 rounded-lg bg-[#4F9CF9] hover:bg-[#3d8ae6] transition-colors text-white text-lg font-medium'>
+                Let&apos;s Go <FaArrowRight />
+              </button>
+            </div>
           </div>
-          <div>
-            <button className='w-[171px] h-[63px] py-[20px] px-[40px] gap-[10px]  rounded-lg bg-[#4F9CF9] hover:bg-[#4F9CF9] '>
-              <p className='flex items-center text-lg font-medium leading-[23px] tracking-[-2%] text-left text-white'>Let&apos;s Go <FaArrowRight /></p></button>
+
+          {/* Right side - Image block */}
+          <div className='flex-1 w-full lg:w-auto flex items-center justify-center'>
+            <div className='w-full aspect-[4/3] max-w-2xl bg-[#C4DEFD] rounded-lg'></div>
           </div>
         </div>
-        <div className='w-[686px] h-[497px] gap-1 bg-[#C4DEFD]'></div>
       </div>
-
-    </>
+    </section>
   );
 };
 
